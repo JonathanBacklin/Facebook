@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ background-color: #E7E7E7;
 
 nav {
 border-top: solid 1px darkgray;
-max-width: 45%;
+max-width: 50%;
 margin: auto;
 padding: 1rem;
 
@@ -53,29 +54,28 @@ a {
 
 
 
-.Profile {
+#Profile {
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .profileimages {
-  text-align: center;
+  padding: 0%;
   margin-bottom: 8rem;
 
 }
 .smallerbackground {
   z-index: -100;
-  height: 30rem;
+  height: 40rem;
   padding: 0;
   width: 100%;
-  max-width: 70rem;
-  border-radius: 1rem;
+  max-width: 100%;
 }
 
 .Profile-imageBIG {
   position: absolute;
-  left:42%;
-  top: 35%;
+  top: 50%;
+  left: 50%;
   z-index: 22;
 border-radius: 50%;
 height: 15rem;
@@ -113,16 +113,14 @@ box-shadow:0 0 1px 2px darkgray;
 .Photos {
 background: white;
 box-shadow:0 0 1px 2px darkgray;
-  border-radius: 1rem;
-  padding: 1rem;
+border-radius: 1rem;
+padding: 1rem;
 }
 
 .MyPhotos {
   display: inline-grid;
   grid-template-columns: auto auto auto;
   margin: 0;
-
-
 }
 .fotografi {
   background:white;
@@ -214,22 +212,25 @@ margin-top: 2rem;
   justify-content: space-evenly;
   border-top: solid  3px lightgray;
   border-bottom: solid  3px lightgray;
+  margin-bottom: 1rem;
+}
+.Like {
+  cursor: pointer;
+}
+.Comment{
+  cursor: pointer;
+}
+.Share {
+  cursor: pointer;
 }
 
-.Kommentar  {
-  margin-top: 1rem;
-  align-items: center;
-}
+
 .input3 {
   background: white;
   text-align: center;
 }
 
-.emoji {
-  float: right;
-  height: 1rem;
-  width: 1rem;
-}
+
 
 .profilbild2 {
   height: 2rem;
@@ -252,60 +253,25 @@ input {
 }
 
 
-/* HEADER CSS ---------------------------------------*/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  background: white;
+@media all and (min-width: 1200px) {
 
-}
-.Facebooklogo {
-  height: 40px;
-  margin-top: 2px;
+.Profile-imageBIG {
+  left: 44%;
 }
 
-.profilbild {
-  height: 2rem;
-  margin-right: 5px;
-  border-radius: 50%;
-}
-.menu-icons {
-display:grid;
-grid-template-columns: repeat(5,auto);
-align-items: center;
-padding: 0;
-margin-left:15%;
-margin-right: 40%;
-grid-gap: 30%;
-}
+  nav {
+    max-width: 50%;
+  }
 
-.separate-icons {
-  display: flex;
-  gap: 15%;
-}
-.search-bar {
-  display: flex;
-  flex-grow: 1;
 
 }
-.search-input {
-  width: 100%;
-  cursor: pointer;
-
-}
-.search-btn {
-  margin-left: 5px;
-display: flex;
-cursor: pointer;
-}
-/* END OF HEADER CSS*/
 
 /* PC   */
 @media all and (max-width: 1200px) {
 
+  .Profile-imageBIG {
+    left: 40%;
+  }
 
 
   .webgrid {
@@ -339,9 +305,20 @@ cursor: pointer;
     width: 10rem;
     height: 10rem;
   }
+  nav {
+  border-top: solid 1px darkgray;
+  max-width: 50%;
+  padding: 1rem;
+  }
+
 
 }
 @media all and (max-width: 800px) {
+
+.Profile-imageBIG {
+  max-width: 100%;
+  margin:auto;
+}
 
   .webgrid {
     display: block;
@@ -370,17 +347,34 @@ cursor: pointer;
     width: 7rem;
     height: 7rem;
   }
+  nav {
+  border-top: solid 1px darkgray;
+  max-width: 70%;
+  padding: 1rem;
+  }
+
 
 }
 
 
 @media all and (max-width: 600px) {
+
+
+
   .webgrid {
     display: block;
     justify-content: center;
     background: lightgray;
     padding: 1rem;
   }
+  .Profile-imageBIG {
+    position: absolute;
+    left: 25%;
+
+    max-width: 100%;
+    margin:auto;
+  }
+
   .fotografiTL {
     width: 5rem;
     height: 5rem;
@@ -402,36 +396,17 @@ cursor: pointer;
     width: 5rem;
     height: 5rem;
   }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background: white;
-
-  }
-  .Facebooklogo {
-    height: 40px;
-    margin-top: 2px;
-  }
 
   .profilbild {
     height: 2rem;
-    margin-right: 5px;
     border-radius: 50%;
   }
-  .menu-icons {
-  display:flex;
-  grid-template-columns: repeat(5,auto);
-  margin-left:1px;
-  margin-right: 3px;
-  grid-gap: 3%;
+  nav {
+  border-top: solid 1px darkgray;
+  max-width: 80%;
+  padding: 1rem;
   }
 
-  .separate-icons {
-    display: flex;
-    gap 0%;
-  }
+
 
 }
