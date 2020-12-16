@@ -54,14 +54,18 @@ a {
 
 
 
-#Profile {
+.Profile {
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .profileimages {
-  padding: 0%;
-  margin-bottom: 8rem;
+     position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:50%;
+    overflow:visible;
 
 }
 .smallerbackground {
@@ -70,6 +74,15 @@ a {
   padding: 0;
   width: 100%;
   max-width: 100%;
+  position: absolute;
+}
+
+.profileimages2{
+   position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-50%;
+    margin-left:-70%;
 }
 
 .Profile-imageBIG {
