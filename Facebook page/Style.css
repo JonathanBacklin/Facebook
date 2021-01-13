@@ -93,8 +93,8 @@ a {
 .Profile-imageBIG {
   position: absolute;
   top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, 20%);
   z-index: 22;
   border-radius: 50%;
   height: 15rem;
@@ -179,23 +179,34 @@ padding: 1rem;
 .Row2 { /* ROW TO THE RIGHT */
   padding: 1rem;
   border-radius: 1rem;
-  margin: 2rem;
+  margin:2rem;
 }
 
-.input { /* Vad gör du just nu box */
+.Status { /* Vad gör du just nu box */
   background: white;
   box-shadow:0 0 1px 2px darkgray;
   padding: 1rem;
   border-radius: 1rem;
+  margin-bottom: 1rem;
   }
 
-.Inlägg { /* my small inlägg box */
+.input2 {
+  border-radius: 0;
   background: white;
-  box-shadow:0 0 1px 2px darkgray;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 1rem;
+  text-align: left;
+  transform:translate(0px,-15px);
+  box-shadow:0 0 1px 2px lightgray;
+
+
 }
+  .profilbild2 {
+    height: 3rem;
+    margin-right: 5px;
+    border-radius: 50%;
+    transform: translate(0px,5px);
+  }
+
+
 /* ----------------------------------------------*/
 .HelaAndrasinlägg { /* the whole box */
   box-shadow:0 0 1px 2px darkgray;
@@ -243,19 +254,28 @@ margin-top: 2rem;
   cursor: pointer;
 }
 
+.writeacomment {
+  margin: 1rem;
+  text-align: center;
+  line-height: 1;
+}
+
 
 .input3 {
   background: white;
-  text-align: center;
+  text-align: left;
+  transform:translate(-110px,-10px);
+  box-shadow:0 0 1px 2px lightgray;
 }
 
-
-
-.profilbild2 {
+.profilbild3 {
   height: 2rem;
   margin-right: 5px;
   border-radius: 50%;
+  transform:translate(-110px,0px);
 }
+
+
 
 /* ----------------------------------------------*/
 
@@ -267,14 +287,16 @@ input {
   height: 2rem;
   width: 15rem;
   padding:10px;
-  border-radius: 3rem;
+  border-radius: 0;
   outline:none;
 }
 
 
 @media all and (min-width: 1200px) {
 
-
+.Profile-imageBIG {
+  margin-bottom: 1rem;
+}
   nav {
     max-width: 50%;
   }
@@ -285,7 +307,13 @@ input {
 /* PC   */
 @media all and (max-width: 1200px) {
 
-
+  .Profile {
+    margin-top: 4rem;
+  }
+  
+  .Profile-imageBIG {
+    margin-bottom: 1rem;
+  }
 
   .webgrid {
     display: block;
@@ -328,7 +356,13 @@ input {
 }
 @media all and (max-width: 800px) {
 
+  .Profile {
+    margin-top: 4rem;
+  }
 
+  .Profile-imageBIG {
+    margin-bottom: 1rem;
+  }
   .webgrid {
     display: block;
     justify-content: center;
@@ -368,7 +402,13 @@ input {
 
 @media all and (max-width: 600px) {
 
+  .Profile {
+    margin-top: 4rem;
+  }
 
+  .profileimages2 {
+    margin-bottom: 32px;
+  }
 
   .webgrid {
     display: block;
@@ -410,6 +450,18 @@ input {
   padding: 1rem;
   }
 
+  .input3 {
+    background: white;
+    text-align: left;
+    transform:translate(-20px,-5px);
+    box-shadow:0 0 1px 2px lightgray;
+  }
 
+  .profilbild3 {
+    height: 2rem;
+    margin-right: 5px;
+    border-radius: 50%;
+    transform:translate(-20px,5px);
+  }
 
 }
