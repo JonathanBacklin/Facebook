@@ -148,49 +148,60 @@ padding: 1rem;
   padding: 10px;
   height: 10rem;
   width: 10rem;
+  cursor: pointer;
 }
 .fotografiTL {
   background:white;
   padding: 10px;
   height: 10rem;
   width: 10rem;
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 20px 0px 0px 0px;
+  cursor: pointer;
 }
 .fotografiTR {
   background:white;
   padding: 10px;
   height: 10rem;
   width: 10rem;
-  border-radius: 0px 10px 0px 0px;
+  border-radius: 0px 20px 0px 0px;
+  cursor: pointer;
 }
 .fotografiBL {
   background:white;
   padding: 10px;
   height: 10rem;
   width: 10rem;
-  border-radius: 0px 0px 0px 10px;
+  border-radius: 0px 0px 0px 20px;
+  cursor: pointer;
 }
 .fotografiBR {
   background:white;
   padding: 10px;
   height: 10rem;
   width: 10rem;
-  border-radius: 0px 0px 10px 0px;
+  border-radius: 0px 0px 20px 0px;
+  cursor: pointer;
 }
 
 
 .Vänner {
   padding: 1rem;
-  text-align: left;
   margin-top: 1rem;
   border-radius: 1rem;
   box-shadow:0 0 1px 2px darkgray;
+
+}
+
+.MyVänner {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
 }
 
 .vän1 {
   padding: 10px;
   height: 10rem;
   width: 10rem;
+    border-radius: 20px 0px 0px 0px;
 }
 .vän2 {
   padding: 10px;
@@ -201,8 +212,27 @@ padding: 1rem;
   padding: 10px;
   height: 10rem;
   width: 10rem;
+  border-radius: 0px 20px 0px 0px;
 }
 
+.vän7 {
+  padding: 10px;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0px 0px 0px 20px;
+}
+.vän8 {
+  padding: 10px;
+  height: 10rem;
+  width: 10rem;
+
+}
+.vän9 {
+  padding: 10px;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0px 0px 20px 0px;
+}
 
 .Row2 { /* ROW TO THE RIGHT */
   padding: 1rem;
@@ -237,6 +267,7 @@ padding: 1rem;
     margin-right: 5px;
     border-radius: 50%;
     transform: translate(0px,5px);
+    cursor: pointer;
   }
 
 
@@ -258,6 +289,7 @@ margin-top: 2rem;
   height: 2rem;
   margin-right: 5px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .distance { /* just a distance between the text and pic */
@@ -318,6 +350,7 @@ margin-top: 2rem;
   margin-right: 5px;
   border-radius: 50%;
   transform:translate(-50px,0px);
+  cursor: pointer;
 }
 
 
@@ -341,6 +374,7 @@ margin-top: 2rem;
   margin-right: 5px;
   border-radius: 50%;
   transform:translate(-25px,0px);
+  cursor: pointer;
 }
 
 /* ----------------------------------------------*/
@@ -367,6 +401,10 @@ input {
     max-width: 50%;
   }
 
+.Vänner {
+  display: grid;
+grid-template-columns: auto;
+}
 
 }
 
@@ -412,6 +450,40 @@ input {
     width: 10rem;
     height: 10rem;
   }
+  .MyVänner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .vän1 {
+    height: 10rem;
+    width: 10rem;
+      border-radius: 20px 0px 0px 0px;
+  }
+  .vän2 {
+    height: 10rem;
+    width: 10rem;
+  }
+  .vän3 {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0px 20px 0px 0px;
+  }
+
+  .vän7 {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0px 0px 0px 20px;
+  }
+  .vän8 {
+    height: 10rem;
+    width: 10rem;
+
+  }
+  .vän9 {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0px 0px 20px 0px;
+  }
   nav {
   border-top: solid 1px darkgray;
   max-width: 50%;
@@ -455,6 +527,41 @@ input {
   .fotografi {
     width: 7rem;
     height: 7rem;
+  }
+
+  .MyVänner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .vän1 {
+    height: 7rem;
+    width: 7rem;
+      border-radius: 20px 0px 0px 0px;
+  }
+  .vän2 {
+    height: 7rem;
+    width: 7rem;
+  }
+  .vän3 {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 20px 0px 0px;
+  }
+
+  .vän7 {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 0px 0px 20px;
+  }
+  .vän8 {
+    height: 7rem;
+    width: 7rem;
+
+  }
+  .vän9 {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 0px 20px 0px;
   }
   nav {
   border-top: solid 1px darkgray;
@@ -504,6 +611,41 @@ input {
   .fotografi {
     width: 5rem;
     height: 5rem;
+  }
+
+  .MyVänner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .vän1 {
+    height: 5rem;
+    width: 5rem;
+      border-radius: 20px 0px 0px 0px;
+  }
+  .vän2 {
+    height: 5rem;
+    width: 5rem;
+  }
+  .vän3 {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0px 20px 0px 0px;
+  }
+
+  .vän7 {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0px 0px 0px 20px;
+  }
+  .vän8 {
+    height: 5rem;
+    width: 5rem;
+
+  }
+  .vän9 {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0px 0px 20px 0px;
   }
 
   .profilbild {
